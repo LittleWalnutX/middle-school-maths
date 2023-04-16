@@ -5,7 +5,7 @@ pkgdesc="Maths"
 arch=("x86_64" "arm")
 depends=()
 license=("custom")
-source=("echs.c" "echsjxs.c" "jfc.c" "jfcd.c" "jfcz.c" "ychsjxs.c" "yf.c" "zhishu.c")
+source=("zysfj.c" "echs.c" "echsjxs.c" "jfc.c" "jfcd.c" "jfcz.c" "ychsjxs.c" "yf.c" "zhishu.c")
 sha512sums=("SKIP" "SKIP" "SKIP" "SKIP" "SKIP" "SKIP" "SKIP" "SKIP")
 
 package() {
@@ -19,5 +19,6 @@ package() {
 	ln -P ${pkgdir}/usr/bin/ychsjxs ${pkgdir}/usr/bin/zx 
 	gcc -s ${srcdir}/yf.c -o ${pkgdir}/usr/bin/yf
 	gcc -s ${srcdir}/zhishu.c -o ${pkgdir}/usr/bin/zhishu -lm
+	gcc -s ${srcdir}/zysfj.c -o ${pkgdir}/usr/bin/zysfj
 }
 
