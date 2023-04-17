@@ -1,12 +1,12 @@
 pkgname=sxtools
-pkgver=0.1.0
+pkgver=0.1.1
 pkgrel="1"
 pkgdesc="Maths"
-arch=("x86_64" "arm")
+arch=("any")
 depends=()
 license=("custom")
 source=("zysfj.c" "echs.c" "echsjxs.c" "jfc.c" "jfcd.c" "jfcz.c" "ychsjxs.c" "yf.c" "zhishu.c")
-sha512sums=("SKIP" "SKIP" "SKIP" "SKIP" "SKIP" "SKIP" "SKIP" "SKIP")
+sha512sums=("SKIP" "SKIP" "SKIP" "SKIP" "SKIP" "SKIP" "SKIP" "SKIP" "SKIP")
 
 package() {
 	mkdir -p ${pkgdir}/usr/bin
